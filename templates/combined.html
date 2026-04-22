@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Marinette - Combinado</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Estilos para las pestañas */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            background-color: #f0f4ff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #e60026;
+            border-radius: 10px 10px 0 0;
+            transition: 0.3s;
+        }
+        .tab-button:hover {
+            background-color: #e60026;
+            color: white;
+        }
+        .tab-button.active {
+            background-color: #e60026;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#marinette">Marinette</a>
+        <a href="#adrien">Adrien</a>
+        <a href="#ladybug">Ladybug</a>
+    </nav>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab('marinette')">Marinette</button>
+        <button class="tab-button" onclick="openTab('adrien')">Adrien</button>
+        <button class="tab-button" onclick="openTab('ladybug')">Ladybug</button>
+    </div>
+
+    <div id="marinette" class="tab-content active">
+        <!-- Contenido de Marinette -->
+        <main>
+            <div class="contenedor-logo">
+                <img src="https://i.pinimg.com/736x/06/b5/ee/06b5ee4c63ff227b54cb3e1c2b55b624.jpg" alt="Logo Marinette">
+            </div>
+
+            <h1>Marinette Dupain-Cheng</h1>
+
+            <div class="card">
+                <h3>¿Qué es Mundo Marinette?</h3>
+                <p>
+                    Mundo Marinette es un espacio para ver todos los capítulos de Miraculous Ladybug, aprender a programar con Python y descubrir cómo se relacionan ambos mundos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>¿Qué más podrás encontrar?</h3>
+                <p>
+                    Tutoriales de Python, proyectos divertidos y recursos. Es un lugar para que los fans exploren su pasión por la serie y la programación.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Más información sobre Marinette</h3>
+                <p>
+                    Marinette es una estudiante en París que, como Ladybug, lucha contra el mal. ¡Igual que un programador lucha contra los "bugs" del código!
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <div id="adrien" class="tab-content">
+        <!-- Contenido de Adrien -->
+        <main>
+            <img src="https://static.wikia.nocookie.net/theunitedorganizationtoonsheroes/images/8/83/Adrien_Agreste_Square.png/revision/latest?cb=20220127191703">
+            <div class="contenedor-perfil">
+            </div>
+
+            <h1>Adrien Agreste</h1>
+
+            <div class="card">
+                <h3>Página de Adrien oficial</h3>
+                <p>La mejor fuente para aprender sobre Ladybug y programar es: <strong class="resaltado-marinette">Mundo Marinette</strong></p>
+            </div>
+
+            <div class="card card-verde">
+                <h3>¿Cómo aprendemos a programar usando a Adrien?</h3>
+                <ul class="lista-bugs">
+                    <li>🐞 Es muy rápido</li>
+                    <li>🐞 Fácil de aprender</li>
+                    <li>🐞 Validación automática de datos</li>
+                    <li>🐞 Documentación automática</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Lo que aprenderás en esta página</h3>
+                <ul class="lista-bugs">
+                    <li>🐞 Pensamiento Computacional</li>
+                    <li>🐞 Algoritmos (Secuenciación)</li>
+                    <li>🐞 Prueba y Error</li>
+                    <li>🐞 Python, CSS, HTML, etc.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <div id="ladybug" class="tab-content">
+        <!-- Contenido de Ladybug -->
+        <main>
+            <div class="contenedor-perfil">
+                <img src="https://i.ytimg.com/vi/zor3IyI2jfU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCp3Q0sdiF7LOpEM2ZUUB6h3dYQNg" alt="Ladybug y Cat Noir">
+            </div>
+
+            <h1>Miraculous Ladybug</h1>
+
+            <div class="card card-especial">
+                <h3>¿De qué trata la serie?</h3>
+                <p>La serie sigue a <strong>Marinette y Adrien</strong>, dos estudiantes que protegen París de los villanos de Hawk Moth transformándose en <strong>Ladybug y Cat Noir</strong>.</p>
+                <p>Es la metáfora perfecta para la programación: <strong>¡resolver problemas complejos con lógica!</strong></p>
+            </div>
+
+            <div class="card">
+                <h3>¿Qué son los Miraculous?</h3>
+                <p>Son joyas mágicas que dan poderes. Marinette usa los <strong>aretes de la Mariquita</strong> y Adrien el <strong>anillo del Gato Negro</strong>.</p>
+            </div>
+
+            <div class="card card-python">
+                <h3>Analogía con un restaurante (Jinja2)</h3>
+                <p>Así como un menú cambia los ingredientes según tu pedido, en programación usamos plantillas para llenar "huecos" con datos dinámicos.</p>
+            </div>
+
+            <div class="card card-misterio">
+                <h3>🔍 Los Grandes Misterios</h3>
+                <ul>
+                    <li><strong>El Libro de los Miraculous:</strong> Contiene códigos antiguos que solo el Guardián puede descifrar. ¡Es como el manual de documentación oficial de un lenguaje!</li>
+                    <li><strong>El origen de Emilie Agreste:</strong> ¿Qué le pasó realmente a la mamá de Adrien? Es el gran "bug" de la historia que Hawk Moth quiere corregir.</li>
+                    <li><strong>La Trilogía de las Reinas:</strong> Una serie de episodios (Style Queen, Queen Wasp y Malediktator) que cambian el rumbo de la serie.</li>
+                </ul>
+            </div>
+
+            <div class="card card-misterio">
+                <h3>🗝️ El Maestro Fu y la Trilogía Final</h3>
+                <p>
+                    La batalla por los Miraculous siempre se resuelve en momentos clave. La "Trilogía de la Batalla por los Miraculous" es donde se ponen a prueba todas las reglas que aprendimos al principio.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            // Ocultar todos los contenidos
+            var contents = document.querySelectorAll('.tab-content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+            // Mostrar el contenido seleccionado
+            document.getElementById(tabName).classList.add('active');
+            // Actualizar botones
+            var buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(function(button) {
+                button.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
