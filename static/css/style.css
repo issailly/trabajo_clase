@@ -1,0 +1,59 @@
+/* 1. Estilos Globales - Fuente y Fondo */
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #440707; /* Color de fondo suave */
+  color: #333; /* Color de texto principal */
+  line-height: 1.6;
+}
+
+/* 2. Contenedor Principal - Centrar contenido */
+body {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* 3. Títulos - Estilos */
+h1, h2, h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+/* 4. Enlaces - Personalización y efectos */
+a {
+  color: #b63c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* 5. Imágenes - Responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* 6. Botones - Estilo moderno */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ffffff;
+}
+h1 {
+  text-align: center;
+text-shadow: 2px 2px 4px rgba(253, 8, 8, 0.1);
